@@ -1,4 +1,3 @@
-// JavaScript to toggle the navigation menu on small screens
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('nav ul');

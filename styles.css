@@ -1,3 +1,4 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Header Styling */
 header {
     background-color: #080808;
     color: #fff;
@@ -27,9 +29,10 @@ header h1 {
     font-size: 40px;
 }
 
+/* Navigation Menu */
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center items horizontally */
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
@@ -42,12 +45,16 @@ nav {
     font-size: 24px;
     cursor: pointer;
     color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     margin: 0;
+    padding: 0;
+    justify-content: center; /* Center list items horizontally */
 }
 
 nav ul li {
@@ -76,6 +83,7 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* Section Styling */
 section {
     padding: 50px 10%;
     text-align: center;
@@ -89,6 +97,7 @@ section {
     border-radius: 10px;
 }
 
+/* Headings and Paragraphs */
 h2 {
     font-size: 30px;
     margin-bottom: 20px;
@@ -99,6 +108,7 @@ p {
     margin-bottom: 20px;
 }
 
+/* Horizontal List Styling */
 ul.horizontal-list {
     list-style: none;
     padding: 0;
@@ -115,6 +125,7 @@ ul.horizontal-list li a {
     font-size: 16px;
 }
 
+/* Footer Styling */
 footer {
     background: #262626;
     color: #ccc;
@@ -141,6 +152,7 @@ footer ul li a {
     color: #fff;
 }
 
+/* Community Section Styling */
 .community {
     margin-bottom: 30px;
     padding: 20px;
@@ -157,13 +169,34 @@ footer ul li a {
 .community h4 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #ff004f; /* Updated color for headings */
+    color: #ff004f;
 }
 
 .community p {
     font-size: 16px;
 }
 
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #ff004f; /* Text color set to red */
+    background-color: transparent; /* Background color set to transparent */
+    border: 2px solid #ff004f; /* Border color set to red */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff004f; /* Fill color changes to red on hover */
+    color: #fff; /* Text color changes to white on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
         font-size: 30px;
@@ -231,8 +264,7 @@ footer ul li a {
     }
 }
 
-
-
+/* Particle Effect in the Background */
 #home {
     position: relative;
     overflow: hidden;
@@ -253,11 +285,10 @@ footer ul li a {
     background: gold;
     border-radius: 50%;
     pointer-events: none;
+    animation: move 10s infinite;
 }
 
-
-
-
+/* Particle Animation */
 @keyframes move {
     0% {
         transform: translateY(0) scale(1);
