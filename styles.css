@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 2.5rem;
 }
 
 /* Navigation Menu */
@@ -34,21 +34,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    position: relative;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
-    position: absolute;
-    top: 20px; /* Position toggle button */
-    right: 20px; /* Position toggle button */
-    z-index: 10;
+    padding: 20px;
 }
 
 nav ul {
@@ -60,7 +46,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1rem; /* Responsive margin */
+    margin: 0 1.25rem;
 }
 
 nav ul li a {
@@ -85,32 +71,6 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* Mobile Menu Styles */
-nav ul {
-    display: flex; /* Default to flex for large screens */
-}
-
-nav ul.active {
-    display: flex; /* Show menu when active */
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #080808;
-    padding: 10px 0;
-    position: absolute;
-    top: 60px; /* Adjust to fit below the toggle */
-    left: 0;
-    z-index: 9;
-}
-
-nav ul li {
-    margin: 10px 0; /* Margin for mobile menu items */
-}
-
-.menu-toggle {
-    display: block; /* Show toggle button on mobile */
-}
-
 /* Section Styling */
 section {
     padding: 50px 10%;
@@ -127,12 +87,12 @@ section {
 
 /* Headings and Paragraphs */
 h2 {
-    font-size: 1.875rem; /* Responsive font size */
+    font-size: 1.875rem;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -150,7 +110,7 @@ ul.horizontal-list li {
 ul.horizontal-list li a {
     text-decoration: none;
     color: #ff004f;
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1rem;
 }
 
 /* Footer Styling */
@@ -233,19 +193,6 @@ footer ul li a {
     nav ul {
         flex-direction: column;
         align-items: center;
-        display: none; /* Hide menu by default */
-    }
-
-    nav ul.active {
-        display: flex; /* Show menu when active */
-    }
-
-    nav ul li {
-        margin: 10px 0; /* Margin for mobile menu items */
-    }
-
-    .menu-toggle {
-        display: block; /* Show toggle button */
     }
 
     section {
