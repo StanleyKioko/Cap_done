@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem; /* Using rem for better scalability */
+    font-size: 2.5rem; /* Responsive font size */
 }
 
 /* Navigation Menu */
@@ -34,9 +34,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    flex-wrap: wrap;
-    position: relative; /* Ensure positioning for mobile menu */
+    padding: 10px;
+    position: relative;
 }
 
 .menu-toggle {
@@ -61,7 +60,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 1.25rem; /* Using rem for consistent spacing */
+    margin: 0 1rem; /* Responsive margin */
 }
 
 nav ul li a {
@@ -98,14 +97,14 @@ nav ul.active {
     width: 100%;
     background-color: #080808;
     padding: 10px 0;
-    position: absolute; /* Ensure menu is positioned */
+    position: absolute;
     top: 60px; /* Adjust to fit below the toggle */
     left: 0;
     z-index: 9;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 10px 0; /* Margin for mobile menu items */
 }
 
 .menu-toggle {
@@ -128,12 +127,12 @@ section {
 
 /* Headings and Paragraphs */
 h2 {
-    font-size: 1.875rem;
+    font-size: 1.875rem; /* Responsive font size */
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1rem; /* Responsive font size */
     margin-bottom: 20px;
 }
 
@@ -151,7 +150,7 @@ ul.horizontal-list li {
 ul.horizontal-list li a {
     text-decoration: none;
     color: #ff004f;
-    font-size: 1rem;
+    font-size: 1rem; /* Responsive font size */
 }
 
 /* Footer Styling */
@@ -242,7 +241,7 @@ footer ul li a {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Margin for mobile menu items */
     }
 
     .menu-toggle {
