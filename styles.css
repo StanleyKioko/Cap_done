@@ -36,6 +36,7 @@ nav {
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
+    position: relative; /* Ensure positioning for mobile menu */
 }
 
 .menu-toggle {
@@ -45,7 +46,9 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
     color: #fff;
-    position: relative;
+    position: absolute;
+    top: 20px; /* Position toggle button */
+    right: 20px; /* Position toggle button */
     z-index: 10;
 }
 
@@ -205,14 +208,18 @@ footer ul li a {
     nav ul {
         flex-direction: column;
         align-items: center;
-        display: none;
+        display: none; /* Hide menu by default */
         width: 100%;
         background-color: #080808;
         padding: 10px 0;
+        position: absolute; /* Ensure menu is positioned */
+        top: 60px; /* Adjust to fit below the toggle */
+        left: 0;
+        z-index: 9;
     }
 
     nav ul.active {
-        display: flex;
+        display: flex; /* Show menu when active */
     }
 
     nav ul li {
@@ -220,7 +227,7 @@ footer ul li a {
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Show toggle button */
     }
 
     section {
