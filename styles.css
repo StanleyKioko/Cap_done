@@ -86,6 +86,32 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+/* Mobile Menu Styles */
+nav ul {
+    display: flex; /* Default to flex for large screens */
+}
+
+nav ul.active {
+    display: flex; /* Show menu when active */
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #080808;
+    padding: 10px 0;
+    position: absolute; /* Ensure menu is positioned */
+    top: 60px; /* Adjust to fit below the toggle */
+    left: 0;
+    z-index: 9;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+.menu-toggle {
+    display: block; /* Show toggle button on mobile */
+}
+
 /* Section Styling */
 section {
     padding: 50px 10%;
@@ -209,13 +235,6 @@ footer ul li a {
         flex-direction: column;
         align-items: center;
         display: none; /* Hide menu by default */
-        width: 100%;
-        background-color: #080808;
-        padding: 10px 0;
-        position: absolute; /* Ensure menu is positioned */
-        top: 60px; /* Adjust to fit below the toggle */
-        left: 0;
-        z-index: 9;
     }
 
     nav ul.active {
