@@ -26,13 +26,13 @@ header {
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 2.5rem; /* Using rem for better scalability */
 }
 
 /* Navigation Menu */
 nav {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@ nav {
     display: none;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
     color: #fff;
     position: relative;
@@ -54,17 +54,17 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: center; /* Center list items horizontally */
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 1.25rem; /* Using rem for consistent spacing */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem;
     position: relative;
 }
 
@@ -76,7 +76,7 @@ nav ul li a::after {
     position: absolute;
     left: 0;
     bottom: -6px;
-    transition: 0.5s;
+    transition: width 0.5s;
 }
 
 nav ul li a:hover::after {
@@ -99,12 +99,12 @@ section {
 
 /* Headings and Paragraphs */
 h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 20px;
 }
 
@@ -122,7 +122,7 @@ ul.horizontal-list li {
 ul.horizontal-list li a {
     text-decoration: none;
     color: #ff004f;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Footer Styling */
@@ -167,13 +167,13 @@ footer ul li a {
 }
 
 .community h4 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: #ff004f;
 }
 
 .community p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Button Styles */
@@ -181,25 +181,25 @@ footer ul li a {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    font-size: 16px;
-    color: #ff004f; /* Text color set to red */
-    background-color: transparent; /* Background color set to transparent */
-    border: 2px solid #ff004f; /* Border color set to red */
+    font-size: 1rem;
+    color: #ff004f;
+    background-color: transparent;
+    border: 2px solid #ff004f;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .btn:hover {
-    background-color: #ff004f; /* Fill color changes to red on hover */
-    color: #fff; /* Text color changes to white on hover */
-    transform: scale(1.05); /* Slight scaling effect on hover */
+    background-color: #ff004f;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     nav ul {
@@ -233,11 +233,11 @@ footer ul li a {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     ul.horizontal-list li {
@@ -248,19 +248,19 @@ footer ul li a {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     nav ul li a {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 }
 
