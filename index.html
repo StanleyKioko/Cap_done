@@ -120,12 +120,29 @@
 
     <footer>
         <h2>Let's Connect</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/starnley-mwange-529171229/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://x.com/Starnleykioko" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/StanleyKioko" target="_blank">Git Hub</a></li>
-        </ul>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/starnley-mwange-529171229/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a></li>
+        <li><a href="https://x.com/Starnleykioko" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+        </a></li>
+        <li><a href="https://github.com/StanleyKioko" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+        </a></li>
+    </ul>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('nav ul');
+    
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
     <script src="scripts.js"></script>
+    
 </body>
 </html>
